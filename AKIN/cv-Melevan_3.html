@@ -28,8 +28,7 @@
     }
 
     h1 {
-      margin-top: 30px; /* Marge réduite pour remonter le titre */
-      margin-bottom: 20px;
+      margin-top: 40px;
       font-size: 2.5rem;
       text-align: center;
       letter-spacing: 2px;
@@ -39,7 +38,8 @@
 
     .cv-container {
       width: 90%;
-      max-width: 1000px;
+      max-width: 1000px; /* Élargi pour la disposition en 2 colonnes */
+      margin-top: 30px;
       background: #fff;
       color: var(--text-color);
       border-radius: 15px;
@@ -57,27 +57,6 @@
       padding: 30px;
       border-right: 1px solid #e0e0e0;
       box-sizing: border-box;
-      text-align: center; /* Centrer le contenu de la sidebar, y compris la photo */
-    }
-
-    /* Style de la photo de profil */
-    .profile-photo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%; /* Rendre la photo ronde */
-      object-fit: cover; /* S'assure que l'image couvre bien le cercle sans être déformée */
-      border: 4px solid #fff; /* Bordure blanche pour faire ressortir la photo */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-
-    /* Alignement à gauche pour le texte de contact */
-    .contact-info p {
-      text-align: left;
-      display: flex;
-      align-items: center;
-      margin-bottom: 12px;
-      font-size: 0.9rem;
     }
 
     /* Colonne de droite (Main) */
@@ -94,7 +73,6 @@
       padding-bottom: 5px;
       font-size: 1.4rem;
       text-transform: uppercase;
-      text-align: left; /* S'assurer que les titres H2 sont alignés à gauche */
     }
 
     h3 {
@@ -111,7 +89,6 @@
 
     ul {
       padding-left: 20px;
-      text-align: left;
     }
 
     .section {
@@ -119,6 +96,13 @@
     }
 
     /* Styles pour les contacts */
+    .contact-info p {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+    }
+    
     .contact-icon {
       margin-right: 10px;
       width: 18px;
@@ -130,7 +114,6 @@
     /* Styles pour les points de compétence (Dots) */
     .skill-item {
       margin-bottom: 12px;
-      text-align: left; /* Alignement à gauche pour les compétences */
     }
     .skill-name {
       font-weight: bold;
@@ -152,7 +135,7 @@
       background-color: var(--secondary-color);
     }
 
-    /* Liste détaillée */
+    /* Liste détaillée (Image 2) */
     .tech-skills-list {
       list-style: none;
       padding: 0;
@@ -230,8 +213,6 @@
     
     <aside class="sidebar">
       
-      <img src="photo_cv.jpg" alt="Photo de Melevan Akin" class="profile-photo">
-
       <div class="section contact-info">
         <h2>Infos Personnelles</h2>
         <p><span class="contact-icon">👤</span> Melevan AKIN</p>
@@ -242,6 +223,7 @@
 
       <div class="section">
         <h2>Compétences</h2>
+        
         <div class="skill-item">
           <span class="skill-name">Gestion des réseaux</span>
           <div class="dots-container">
@@ -306,13 +288,16 @@
       <div class="section">
         <h2>Savoir-Faire Technique</h2>
         <ul class="tech-skills-list">
-            <li>Administration Système & Réseau : Installation, configuration et mise en réseau de postes de travail.</li>
-            <li>Services Réseaux : Déploiement de serveurs de base (DNS, Messagerie) et gestion des connectivités (IP, Wi-Fi).</li>
-            <li>Sécurité & Accès : Gestion des droits utilisateurs et des dossiers partagés (ACL).</li>
-            <li>Virtualisation : Création et paramétrage de machines virtuelles.</li>
-            <li>Maintenance & Support : Diagnostic matériel/logiciel et résolution d'incidents (Support niveau 1 & 2).</li>
-            <li>Environnement Utilisateur : Maîtrise du pack Office 365 et accompagnement des utilisateurs.</li>
-            <li>Savoir-être : Communication technique, esprit d'analyse et résolution de problèmes.</li>
+            <li>Connaissances en matière de matériel informatique et de logiciels</li>
+            <li>Analyse des besoins utilisateurs</li>
+            <li>Compétences en matière de dépannage informatique</li>
+            <li>Solides compétences en communication et en résolution de problèmes</li>
+            <li>Connaissance du pack Office 365</li>
+            <li>Installation et configuration de postes de travail en réseau</li>
+            <li>Mise en place de serveurs de base (DNS, Messagerie)</li>
+            <li>Gestion simple des droits d'accès (dossiers partagés, utilisateurs)</li>
+            <li>Suivi et résolution d'incidents réseau (Wi-Fi, connectivité, IP)</li>
+            <li>Utilisation de machines virtuelles (Création, Configuration)</li>
         </ul>
       </div>
 
